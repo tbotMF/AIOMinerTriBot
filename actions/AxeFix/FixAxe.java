@@ -21,8 +21,7 @@ public class FixAxe extends Action {
 			return;
 		if (Inventory.find(PICK_AXE_HANDLE)[0].click("Use"))
 			General.sleep(this.abc.itemInteractionDelay());
-		else
-			return;
+		
 
 	}
 
