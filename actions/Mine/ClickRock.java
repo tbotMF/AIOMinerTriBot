@@ -16,7 +16,7 @@ public class ClickRock extends Action {
 	@Override
 	public void execute() {
 		RSModel rockModel = GlobalVars.getRockToMine().getModel();
-		if (MFUtil.clickModel(rockModel, "Mine"))
+		if (rockModel != null && MFUtil.clickModel(rockModel, "Mine"))
 			Timing.waitCondition(new Condition() {
 
 				@Override
